@@ -5,21 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
 </head>
+
+<style>
+    body{
+        background-color: #C5C1C0;
+    }
+
+    .container{
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        width: 650px;
+        margin: auto;
+    }
+
+    .imagem-refeicoes{
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        width: 100%;
+    }
+
+    .imagem-refeicoes object{
+        max-width: 80%; 
+        height: auto; 
+        margin-top: 20px;
+}
+
+    .titulo-menu{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        font-size: 24px;
+    }
+
+    .cont-pratos{
+        background-color: #F5F5F5;
+        margin-top: 20px;
+    }
+
+    .cont-dados{
+        background-color: #F5F5F5;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .btncalc{
+        margin-top: 10px;
+    }
+
+    .pedidos{
+        margin-left: 20px;
+    }
+
+    .nome-cliente{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .frase-pedido{
+        margin-bottom: 15px;
+    }
+    
+    .preco-final{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+
+</style>
 <body>
 
-<div>
+<div class="container">
 
-    <div>
+    <div class="imagem-refeicoes">
+        <object data="../assets/home.jpg" type="image/jpg" ></object>
+    </div>
+
+    <div class="titulo-menu">
         Menu - Faça A Sua Escolha
     </div>
     
-    <div>
-        <div>
+    <div class="cont-pratos">
+
+        <div class="prato-titulo">
             <h1>Prato Principal</h1>
             <h2>Todos os pratos acompanham arroz, feijão e a sobremesa do dia.</h2>
         </div>
         
-        <div>
+        <div class="prato">
             <div>
                 Bife com Batata
             </div>
@@ -29,7 +106,7 @@
     
         </div>
     
-        <div>
+        <div class="prato">
             <div>
                 Coxa de Frango Crocante
             </div>
@@ -39,7 +116,7 @@
         </div>
     
         <div>
-            <div>
+            <div class="prato">
                 Carne de Panela
             </div>
             <div>
@@ -49,14 +126,14 @@
     
     </div>
 
-    <div>
+    <div class="cont-pratos">
 
-        <div>
+        <div class="prato-titulo">
             <h1>Acompanhamentos</h1>
             <h2>Porções para uma pessoa</h2>
         </div>
 
-        <div>
+        <div class="prato">
             <div>
                 Farofa
             </div>
@@ -65,7 +142,7 @@
             </div>
         </div>
 
-        <div>
+        <div class="prato">
             <div>
                 Salada
             </div> 
@@ -74,7 +151,7 @@
             </div>
         </div>
 
-        <div>
+        <div class="prato">
             <div>
                 Torresmo
             </div>
@@ -85,7 +162,7 @@
 
     </div>
 
-    <div>
+    <div class="cont-dados">
 
         <div>
             <h1>Dados Pessoais</h1>
@@ -99,29 +176,29 @@
 
     </div>
 
-    <div>
+    <div class="btncalc">
         <button>Calcular</button>
     </div>
 
-    <div>
+    <div class="pedidos">
 
-        <div>
+        <div class="nome-cliente">
             Caro xxxx
         </div>
 
-        <div>
+        <div class="frase-pedido">
             Seguem os dados do seu pedido.
         </div>
 
-        <div>
+        <div class="frase-pedido">
             O seu pedido é:
         </div>
 
-        <div>
+        <div class="descricao-pedido">
             xxx
         </div>
 
-        <div>
+        <div class="preco-final">
             Preço final R$ xxx,xxx
         </div>
 
