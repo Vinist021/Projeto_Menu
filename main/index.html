@@ -7,6 +7,7 @@
 </head>
 
 <style>
+
     body{
         background-color: #C5C1C0;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -45,7 +46,31 @@
 
     .cont-pratos{
         background-color: #F5F5F5;
-        margin-top: 20px;
+        margin: 20px auto;
+        width: 85%;
+        padding: 30px;
+
+        border-radius: 6px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .prato-principal{
+        text-align: center;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    .txt-acompanhamentos{
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
+    .prato{
+        background-color: #FFFFFF;
+
+        border-radius: 6px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
 
     .cont-dados{
@@ -54,6 +79,36 @@
         display: flex;
         flex-direction: column;
         row-gap: 15px;
+    }
+
+    .colunas-pratos{
+        display: flex;
+        flex-direction: row;
+        column-gap: 15px;
+    }
+
+    .prato{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .imagem-prato object{
+        max-width: 90%; 
+        height: 350px; 
+        margin-top: 20px;
+    }
+
+    .prato-nome{
+        font-weight: bold;
+    }
+
+    .prato-preco{
+        color: #135D0A;
+        font-weight: bold;
     }
 
     .btncalc{
@@ -85,7 +140,9 @@
 <div class="container">
 
     <div class="imagem-refeicoes">
+
         <object data="../assets/home.jpg" type="image/jpg" ></object>
+
     </div>
 
     <div class="titulo-menu">
@@ -95,74 +152,98 @@
     <div class="cont-pratos">
 
         <div class="prato-titulo">
-            <h1>Prato Principal</h1>
-            <h2>Todos os pratos acompanham arroz, feijão e a sobremesa do dia.</h2>
+            <div class="prato-principal">Prato Principal</div>
+            <div class="txt-acompanhamentos">Todos os pratos acompanham arroz, feijão e a sobremesa do dia.</div>
         </div>
         
-        <div class="prato">
-            <div>
-                Bife com Batata
-            </div>
-            <div>
-                R$ 30,00
-            </div>
-    
-        </div>
-    
-        <div class="prato">
-            <div>
-                Coxa de Frango Crocante
-            </div>
-            <div>
-                R$ 25,00
-            </div>
-        </div>
-    
-        <div>
+        <div class="colunas-pratos">  
+
             <div class="prato">
-                Carne de Panela
+
+                <div class="imagem-prato">
+                    <object data="../assets/bife.jpg" type="image/jpg"></object>
+                </div>
+                
+                <div class="prato-nome">
+                    Bife com Batata
+                </div>
+                <div class="prato-preco">
+                    R$ 30,00
+                </div>
+        
             </div>
-            <div>
-                R$ 22,00
+        
+            <div class="prato">
+
+                <div class="imagem-prato">
+                    <object data="/assets/coxa.jpg" type="image/jpg"></object>
+                </div>
+
+                <div class="prato-nome">
+                    Coxa de Frango Crocante
+                </div>
+                <div class="prato-preco">
+                    R$ 25,00
+                </div>
             </div>
+        
+            <div class="prato">
+
+                <div class="imagem-prato">
+                    <object data="/assets/panela.jpg" type="image/jpg"></object>
+                </div>
+
+                <div class="prato-nome">
+                    Carne de Panela
+                </div>
+                <div class="prato-preco">
+                    R$ 22,00
+                </div>
+                
+            </div>
+
         </div>
-    
+        
     </div>
 
     <div class="cont-pratos">
 
         <div class="prato-titulo">
-            <h1>Acompanhamentos</h1>
-            <h2>Porções para uma pessoa</h2>
+            <div>Acompanhamentos</div>
+            <div>Porções para uma pessoa</div>
         </div>
 
-        <div class="prato">
-            <div>
-                Farofa
-            </div>
-            <div>
-                R$ 10,00
-            </div>
-        </div>
+        <div class="colunas-pratos">
 
-        <div class="prato">
-            <div>
-                Salada
-            </div> 
-            <div>
-                R$ 8,00
+            <div class="prato">
+                <div class="prato-nome">
+                    Farofa
+                </div>
+                <div class="prato-preco">
+                    R$ 10,00
+                </div>
             </div>
-        </div>
+    
+            <div class="prato">
+                <div class="prato-nome">
+                    Salada
+                </div> 
+                <div class="prato-preco">
+                    R$ 8,00
+                </div>
+            </div>
+    
+            <div class="prato">
+                <div class="prato-nome">
+                    Torresmo
+                </div>
+                <div class="prato-preco">
+                    R$ 12,00
+                </div>
+            </div>
 
-        <div class="prato">
-            <div>
-                Torresmo
-            </div>
-            <div>
-                R$ 12,00
-            </div>
         </div>
-
+        
     </div>
 
     <div class="cont-dados">
