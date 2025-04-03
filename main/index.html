@@ -54,13 +54,13 @@
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
 
-    .prato-principal{
+    .txt-principal{
         text-align: center;
         margin-bottom: 15px;
         font-weight: bold;
     }
 
-    .txt-acompanhamentos{
+    .txt-subtitulo{
         text-align: center;
         margin-bottom: 30px;
         font-weight: bold;
@@ -103,12 +103,14 @@
     }
 
     .prato-nome{
+        font-size: 18px;
         font-weight: bold;
     }
 
     .prato-preco{
         color: #135D0A;
-        font-weight: bold;
+        font-size: 18px;
+        font-weight: bolder;
     }
 
     .btncalc{
@@ -152,8 +154,8 @@
     <div class="cont-pratos">
 
         <div class="prato-titulo">
-            <div class="prato-principal">Prato Principal</div>
-            <div class="txt-acompanhamentos">Todos os pratos acompanham arroz, feijão e a sobremesa do dia.</div>
+            <div class="txt-principal">Prato Principal</div>
+            <div class="txt-subtitulo">Todos os pratos acompanham arroz, feijão e a sobremesa do dia.</div>
         </div>
         
         <div class="colunas-pratos">  
@@ -209,13 +211,18 @@
     <div class="cont-pratos">
 
         <div class="prato-titulo">
-            <div>Acompanhamentos</div>
-            <div>Porções para uma pessoa</div>
+            <div class="txt-principal">Acompanhamentos</div>
+            <div class="txt-subtitulo">Porções para uma pessoa</div>
         </div>
 
         <div class="colunas-pratos">
 
             <div class="prato">
+
+                <div class="imagem-prato">
+                    <object data="/assets/farofa.jpg" type="image/jpg"></object>
+                </div>
+
                 <div class="prato-nome">
                     Farofa
                 </div>
@@ -225,6 +232,11 @@
             </div>
     
             <div class="prato">
+
+                <div class="imagem-prato">
+                    <object data="/assets/salad.jpg" type="image/jpg"></object>
+                </div>
+
                 <div class="prato-nome">
                     Salada
                 </div> 
@@ -234,6 +246,11 @@
             </div>
     
             <div class="prato">
+
+                <div class="imagem-prato">
+                    <object data="/assets/torresmo.jpg" type="image/jpg"></object>
+                </div>
+
                 <div class="prato-nome">
                     Torresmo
                 </div>
