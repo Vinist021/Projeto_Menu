@@ -13,11 +13,28 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
+    input{
+        display: flex;
+        flex-direction: row;
+
+        padding: 10px;
+        border-radius: 6px;
+        border: none;
+    
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    input:focus{
+        outline: none;
+        box-shadow: 0 0 10px #AAAAAA;
+    }
+
     .container{
         background-color: #FFFFFF;
         display: flex;
         flex-direction: column;
-        width: 900px;
+        width: 1000px;
         margin: auto;
 
         border-radius: 6px;
@@ -44,11 +61,18 @@
         font-size: 28px;
     }
 
+   
     .cont-pratos{
+        display: flex;
+        flex-direction: column;
         background-color: #F5F5F5;
-        margin: 20px auto;
-        width: 85%;
+        margin: 20px 10px 20px 10px;
+        width: 88%;
         padding: 30px;
+
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-bottom: 4%;
 
         border-radius: 6px;
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -75,25 +99,39 @@
 
     .cont-dados{
         background-color: #F5F5F5;
-        margin-top: 20px;
+        margin: 20px auto;
+        width: 88%;
+        padding: 30px;
+
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-bottom: 4%;
+
+        border-radius: 6px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .inputs-dados{
         display: flex;
         flex-direction: column;
         row-gap: 15px;
+
+        margin: 0 40px 0 40px;
     }
 
     .colunas-pratos{
         display: flex;
-        flex-direction: row;
-        column-gap: 15px;
+        justify-content: center;
+
+        column-gap: 30px;
     }
 
     .prato{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         text-align: center;
-        width: 100%;
+        width: 30%;
+        height: 30%;
     }
 
     .imagem-prato object{
@@ -103,13 +141,13 @@
     }
 
     .prato-nome{
-        font-size: 18px;
+        font-size: 14px;
         font-weight: bold;
     }
 
     .prato-preco{
         color: #135D0A;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: bolder;
     }
 
@@ -118,7 +156,11 @@
     }
 
     .pedidos{
+        display: flex;
+        flex-direction: column;
         margin-left: 20px;
+        text-align: left;
+        
     }
 
     .nome-cliente{
@@ -150,136 +192,147 @@
     <div class="titulo-menu">
         Menu - Faça A Sua Escolha
     </div>
+
+    <div class="conts-ints">
+
+        <div class="cont-pratos">
+
+            <div class="prato-titulo">
+                <div class="txt-principal">Prato Principal</div>
+                <div class="txt-subtitulo">Todos os pratos acompanham arroz, feijão e a sobremesa do dia.</div>
+            </div>
+            
+            <div class="colunas-pratos">  
     
-    <div class="cont-pratos">
-
-        <div class="prato-titulo">
-            <div class="txt-principal">Prato Principal</div>
-            <div class="txt-subtitulo">Todos os pratos acompanham arroz, feijão e a sobremesa do dia.</div>
-        </div>
-        
-        <div class="colunas-pratos">  
-
-            <div class="prato">
-
-                <div class="imagem-prato">
-                    <object data="../assets/bife.jpg" type="image/jpg"></object>
+                <div class="prato">
+    
+                    <div class="imagem-prato">
+                        <object data="../assets/bife.jpg" type="image/jpg"></object>
+                    </div>
+                    
+                    <div class="prato-nome">
+                        Bife com Batata
+                    </div>
+                    <div class="prato-preco">
+                        R$ 30,00
+                    </div>
+            
                 </div>
-                
-                <div class="prato-nome">
-                    Bife com Batata
+            
+                <div class="prato">
+    
+                    <div class="imagem-prato">
+                        <object data="/assets/coxa.jpg" type="image/jpg"></object>
+                    </div>
+    
+                    <div class="prato-nome">
+                        Coxa de Frango Crocante
+                    </div>
+                    <div class="prato-preco">
+                        R$ 25,00
+                    </div>
                 </div>
-                <div class="prato-preco">
-                    R$ 30,00
+            
+                <div class="prato">
+    
+                    <div class="imagem-prato">
+                        <object data="/assets/panela.jpg" type="image/jpg"></object>
+                    </div>
+    
+                    <div class="prato-nome">
+                        Carne de Panela
+                    </div>
+                    <div class="prato-preco">
+                        R$ 22,00
+                    </div>
+                    
                 </div>
-        
+    
             </div>
-        
-            <div class="prato">
-
-                <div class="imagem-prato">
-                    <object data="/assets/coxa.jpg" type="image/jpg"></object>
-                </div>
-
-                <div class="prato-nome">
-                    Coxa de Frango Crocante
-                </div>
-                <div class="prato-preco">
-                    R$ 25,00
-                </div>
-            </div>
-        
-            <div class="prato">
-
-                <div class="imagem-prato">
-                    <object data="/assets/panela.jpg" type="image/jpg"></object>
-                </div>
-
-                <div class="prato-nome">
-                    Carne de Panela
-                </div>
-                <div class="prato-preco">
-                    R$ 22,00
-                </div>
-                
-            </div>
-
+            
         </div>
-        
-    </div>
-
-    <div class="cont-pratos">
-
-        <div class="prato-titulo">
-            <div class="txt-principal">Acompanhamentos</div>
-            <div class="txt-subtitulo">Porções para uma pessoa</div>
-        </div>
-
-        <div class="colunas-pratos">
-
-            <div class="prato">
-
-                <div class="imagem-prato">
-                    <object data="/assets/farofa.jpg" type="image/jpg"></object>
-                </div>
-
-                <div class="prato-nome">
-                    Farofa
-                </div>
-                <div class="prato-preco">
-                    R$ 10,00
-                </div>
+    
+        <div class="cont-pratos">
+    
+            <div class="prato-titulo">
+                <div class="txt-principal">Acompanhamentos</div>
+                <div class="txt-subtitulo">Porções para uma pessoa</div>
             </div>
     
-            <div class="prato">
-
-                <div class="imagem-prato">
-                    <object data="/assets/salad.jpg" type="image/jpg"></object>
+            <div class="colunas-pratos">
+    
+                <div class="prato">
+    
+                    <div class="imagem-prato">
+                        <object data="/assets/farofa.jpg" type="image/jpg"></object>
+                    </div>
+    
+                    <div class="prato-nome">
+                        Farofa
+                    </div>
+                    <div class="prato-preco">
+                        R$ 10,00
+                    </div>
                 </div>
-
-                <div class="prato-nome">
-                    Salada
-                </div> 
-                <div class="prato-preco">
-                    R$ 8,00
+        
+                <div class="prato">
+    
+                    <div class="imagem-prato">
+                        <object data="/assets/salad.jpg" type="image/jpg"></object>
+                    </div>
+    
+                    <div class="prato-nome">
+                        Salada
+                    </div> 
+                    <div class="prato-preco">
+                        R$ 8,00
+                    </div>
                 </div>
+        
+                <div class="prato">
+    
+                    <div class="imagem-prato">
+                        <object data="/assets/torresmo.jpg" type="image/jpg"></object>
+                    </div>
+    
+                    <div class="prato-nome">
+                        Torresmo
+                    </div>
+                    <div class="prato-preco">
+                        R$ 12,00
+                    </div>
+                </div>
+    
+            </div>
+            
+        </div>
+    
+        <div class="cont-dados">
+    
+            <div>
+                <div class="txt-principal">Dados Pessoais</div>
             </div>
     
-            <div class="prato">
-
-                <div class="imagem-prato">
-                    <object data="/assets/torresmo.jpg" type="image/jpg"></object>
-                </div>
-
-                <div class="prato-nome">
-                    Torresmo
-                </div>
-                <div class="prato-preco">
-                    R$ 12,00
-                </div>
+            <div class="inputs-dados">
+    
+                <input type="text" placeholder="Nome:">
+    
+                <input type="number"  placeholder="Máscara de telefone">
+    
+                <input type="text" placeholder="Email:">
+    
             </div>
-
+            
+    
         </div>
-        
-    </div>
-
-    <div class="cont-dados">
-
-        <div>
-            <h1>Dados Pessoais</h1>
+    
+        <div class="btncalc">
+            <button>Calcular</button>
         </div>
 
-        <input type="text" placeholder="Nome:">
-
-        <input type="number"  placeholder="Máscara de telefone">
-
-        <input type="text" placeholder="Email:">
-
     </div>
-
-    <div class="btncalc">
-        <button>Calcular</button>
-    </div>
+    
+    
 
     <div class="pedidos">
 
