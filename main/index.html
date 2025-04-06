@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quantity.css">
 </head>
 
 <style>
@@ -72,7 +74,7 @@
         max-width: 100%; 
         height: auto; 
         margin-top: 20px;
-}
+    }
 
     .titulo-menu{
         display: flex;
@@ -147,7 +149,12 @@
     .prato{
         display: flex;
         flex-direction: column;
+
         text-align: center;
+        align-items: center;
+
+        padding-bottom: 15px;
+
         width: 30%;
         height: 30%;
     }
@@ -240,7 +247,18 @@
                     <div class="prato-preco">
                         R$ 30,00
                     </div>
-            
+
+                    <div class="contadores">
+
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus">
+                            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                                class="input-text qty text" size="4" pattern="" inputmode="">
+                            <input type="button" value="+" class="plus">
+                        </div>
+
+                    </div>
+
                 </div>
             
                 <div class="prato">
@@ -255,6 +273,18 @@
                     <div class="prato-preco">
                         R$ 25,00
                     </div>
+
+                    <div class="contadores">
+
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus">
+                            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                                class="input-text qty text" size="4" pattern="" inputmode="">
+                            <input type="button" value="+" class="plus">
+                        </div>
+
+                    </div>
+
                 </div>
             
                 <div class="prato">
@@ -269,7 +299,18 @@
                     <div class="prato-preco">
                         R$ 22,00
                     </div>
-                    
+
+                    <div class="contadores">
+
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus">
+                            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                                class="input-text qty text" size="4" pattern="" inputmode="">
+                            <input type="button" value="+" class="plus">
+                        </div>
+
+                    </div>
+
                 </div>
     
             </div>
@@ -297,6 +338,18 @@
                     <div class="prato-preco">
                         R$ 10,00
                     </div>
+
+                    <div class="contadores">
+
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus">
+                            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                                class="input-text qty text" size="4" pattern="" inputmode="">
+                            <input type="button" value="+" class="plus">
+                        </div>
+
+                    </div>
+
                 </div>
         
                 <div class="prato">
@@ -311,6 +364,18 @@
                     <div class="prato-preco">
                         R$ 8,00
                     </div>
+
+                    <div class="contadores">
+
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus">
+                            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                                class="input-text qty text" size="4" pattern="" inputmode="">
+                            <input type="button" value="+" class="plus">
+                        </div>
+
+                    </div>
+
                 </div>
         
                 <div class="prato">
@@ -325,6 +390,18 @@
                     <div class="prato-preco">
                         R$ 12,00
                     </div>
+
+                    <div class="contadores">
+
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus">
+                            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                                class="input-text qty text" size="4" pattern="" inputmode="">
+                            <input type="button" value="+" class="plus">
+                        </div>
+
+                    </div>
+
                 </div>
     
             </div>
@@ -351,7 +428,7 @@
         </div>
     
         <div class="btncalc">
-            <button>Calcular</button>
+            <button onclick="calc()">Calcular</button>
         </div>
 
     </div>
@@ -383,6 +460,10 @@
     </div>
 
 </div>
+
+<script src="js/javascript.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/quantity.js"></script>
 
 </body>
 </html>
