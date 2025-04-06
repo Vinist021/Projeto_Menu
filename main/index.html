@@ -208,7 +208,6 @@
         margin-bottom: 30px;
     }
     
-
 </style>
 <body>
 
@@ -418,7 +417,7 @@
     
                 <input type="text" placeholder="Nome:">
     
-                <input type="number"  placeholder="Máscara de telefone">
+                <input type="text" id="phone" placeholder="Digite o seu telefone"></input>
     
                 <input type="text" placeholder="Email:">
     
@@ -464,6 +463,10 @@
 <script src="js/javascript.js"></script>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/quantity.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script>
+    $("#phone").mask("(99) 99999-9999");
+</script>
 
 </body>
 </html>
