@@ -1,17 +1,22 @@
 function calc() {
-    alert("Botão Clicado");
+
+    const nomecliente = $("#nome").val().trim();
+    const telefone = $("#phone").val().trim();
+
+    if (nomecliente === "") {
+        alert("Por favor, preencha o campo Nome.");
+        return;
+    }
+
+    if (telefone === "") {
+        alert("Por favor, preencha o campo Telefone.");
+        return;
+    }
 
     var formatter = new Intl.NumberFormat('pt-BR', {
         style: 'currency',
         currency: 'BRL',
     });
-
-    $("#itens-pedidos").html('');
-
-    const nomecliente = $("#nome").val();
-
-    $("#nome-cliente").html(`<br>Caro <span class="negrito"> ${nomecliente} </span> <br><br>`);
-    $("#frase-pedido").html(`Seguem os dados do seu pedido. <br> <br> O seu pedido é:`);
 
     const pedidos = {
         bife: { nome: "Bife com batata", preco: 30, quantidade: $("#bife").val()},
@@ -23,14 +28,33 @@ function calc() {
         torresmo: {nome: "Torresmo", preco: 12, quantidade: $("#torresmo").val() },
     };
 
-
-    console.log(`Nome do prato: ${pedidos.bife.nome}`);
-    console.log(`Quantidade: ${pedidos.bife.quantidade}`)
-
     var tbife = 0; var tcoxa = 0; var tpanela = 0;
     
     var tfarofa = 0; var tsalada = 0; var ttorresmo = 0;
-   
+
+    var totalItens = 
+    pedidos.bife.quantidade + 
+    pedidos.coxa.quantidade + 
+    pedidos.panela.quantidade + 
+    pedidos.farofa.quantidade + 
+    pedidos.salada.quantidade + 
+    pedidos.torresmo.quantidade;
+
+    if (totalItens == 0) {
+        alert("Selecione pelo menos um item do cardápio.");
+        $("#itens-pedidos").html("");
+        $("#nome-cliente").html("");
+        $("#frase-pedido").html("");
+        $("#preco-final").html("");
+
+        return;
+    }
+
+    $("#itens-pedidos").html('');
+
+    $("#nome-cliente").html(`<br>Caro <span class="negrito"> ${nomecliente} </span> <br><br>`);
+    $("#frase-pedido").html(`Seguem os dados do seu pedido. <br> <br> O seu pedido é:`);
+
     if (pedidos.bife.quantidade > 0) {
         $("#itens-pedidos").append(
             `<p> &bull; Prato: ${pedidos.bife.nome} - Preço unitário: ${formatter.format(pedidos.bife.preco)} - Quantidade: ${pedidos.bife.quantidade} - Total: ${formatter.format(pedidos.bife.preco * pedidos.bife.quantidade)}.</p>`
