@@ -251,7 +251,7 @@
 
                         <div class="quantity buttons_added">
                             <input type="button" value="-" class="minus">
-                            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                            <input type="number" step="1" min="0" max="" id="bife" name="quantity" value="0" title="Qty"
                                 class="input-text qty text" size="4" pattern="" inputmode="">
                             <input type="button" value="+" class="plus">
                         </div>
@@ -277,7 +277,7 @@
 
                         <div class="quantity buttons_added">
                             <input type="button" value="-" class="minus">
-                            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                            <input type="number" step="1" min="0" max="" id="coxa" name="quantity" value="0" title="Qty"
                                 class="input-text qty text" size="4" pattern="" inputmode="">
                             <input type="button" value="+" class="plus">
                         </div>
@@ -303,7 +303,7 @@
 
                         <div class="quantity buttons_added">
                             <input type="button" value="-" class="minus">
-                            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                            <input type="number" step="1" min="0" max="" id="panela" name="quantity" value="0" title="Qty"
                                 class="input-text qty text" size="4" pattern="" inputmode="">
                             <input type="button" value="+" class="plus">
                         </div>
@@ -342,7 +342,7 @@
 
                         <div class="quantity buttons_added">
                             <input type="button" value="-" class="minus">
-                            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                            <input type="number" step="1" min="0" max="" id="farofa" name="quantity" value="0" title="Qty"
                                 class="input-text qty text" size="4" pattern="" inputmode="">
                             <input type="button" value="+" class="plus">
                         </div>
@@ -368,7 +368,7 @@
 
                         <div class="quantity buttons_added">
                             <input type="button" value="-" class="minus">
-                            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                            <input type="number" step="1" min="0" max="" id="salada" name="quantity" value="0" title="Qty"
                                 class="input-text qty text" size="4" pattern="" inputmode="">
                             <input type="button" value="+" class="plus">
                         </div>
@@ -394,7 +394,7 @@
 
                         <div class="quantity buttons_added">
                             <input type="button" value="-" class="minus">
-                            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                            <input type="number" step="1" min="0" max="" id="torresmo" name="quantity" value="0" title="Qty"
                                 class="input-text qty text" size="4" pattern="" inputmode="">
                             <input type="button" value="+" class="plus">
                         </div>
@@ -415,15 +415,15 @@
     
             <div class="inputs-dados">
     
-                <input type="text" placeholder="Nome:">
+                <input id="nome" type="text" placeholder="Nome:"></input>
     
-                <input type="text" id="phone" placeholder="Digite o seu telefone"></input>
+                <input id="phone" type="text" placeholder="Digite o seu telefone"></input>
     
-                <input type="text" placeholder="Email:">
+                <input id="email" type="text" placeholder="Email:"></input>
     
+
             </div>
             
-    
         </div>
     
         <div class="btncalc">
@@ -433,11 +433,10 @@
     </div>
     
     
-
     <div class="pedidos">
 
         <div class="nome-cliente">
-            Caro <span class="negrito">xxxx</span>
+            Caro <span id="nomecliente" class="negrito">xxxx</span>
         </div>
 
         <div class="frase-pedido">
@@ -446,22 +445,20 @@
 
         <div class="frase-pedido">
             O seu pedido é:
-        </div>
 
-        <div class="descricao-pedido">
-            xxx
-        </div>
+            <div id="itens-pedidos">
 
-        <div class="preco-final negrito">
-            Preço final R$ xxx,xxx
+
+            </div>
+
         </div>
 
     </div>
 
 </div>
 
-<script src="js/javascript.js"></script>
 <script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/javascript.js"></script>
 <script src="js/quantity.js"></script>
 <script src="js/jquery.mask.min.js"></script>
 <script>
