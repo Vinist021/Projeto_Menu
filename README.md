@@ -50,7 +50,7 @@ O projeto foi desenvolvido a partir do **clone de um repositório base**, que co
   
 * **Máscara de telefone com jQuery**
 
-A partir dessa base inicial, todo o código da lógica de pedidos, estrutura do HTML, validações e integração das funcionalidades foi desenvolvido por mim.
+Com os assets e exemplos fornecidos como referência, desenvolvi todo o restante do projeto, incluindo a lógica de pedidos, estrutura da página e validações dos dados.
 
 ## 📎 Acesso
 🚀 Acesse o projeto: [Projeto Menu](https://vinist021.github.io/Projeto_Menu/)
